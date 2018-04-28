@@ -1,0 +1,48 @@
+page-buttons-bottom {
+    ion-footer{
+        ion-toolbar{
+            &.toolbar-md ion-row.top ion-col:last-child{
+                line-height: 48px;
+            }
+            &.toolbar-ios ion-row.top ion-col:last-child{
+                line-height: 43px;
+            }
+        }
+        .comment-input{
+            border: 1px solid #E4E4E4;
+            border-radius: 5px;
+            margin: 6px 0;
+            background-color: #ffffff;
+            input.text-input-ios{
+                padding-left: 8px;
+            }
+        }
+        button{
+            &.more{
+                height: 43px;
+            }
+            &.comment-send{
+                width: 100%;
+                height: 68%;
+                margin: 0;
+                font-size: 1.4rem;
+            }
+        }
+        ion-row.funcMenu{
+            ion-col{
+                margin-bottom: 8px;
+                button.button-outline-ios, button.button-outline-md{
+                    color: #727272;
+                    border-color: #E1E1E1;
+                    background: #ffffff;
+                }
+                div{
+                    color: #767676;
+                }
+            }
+        }
+    }
+    .align-center{
+        text-align: center;
+    }
+}

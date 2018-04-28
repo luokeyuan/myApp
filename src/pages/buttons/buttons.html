@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Buttons</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <button ion-item (click)="gotoPage(buttonsTopPage)">顶部buttons</button>
+    <button ion-item (click)="gotoPage(buttonsBottomPage)">底部buttons</button>
+  </ion-list>
+</ion-content>

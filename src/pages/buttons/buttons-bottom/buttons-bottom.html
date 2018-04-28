@@ -1,0 +1,68 @@
+<!--
+  Generated template for the ButtonsBottomPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>buttons-bottom</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar no-padding>
+    <ion-grid no-padding>
+      <ion-row class="top">
+        <ion-col col-10 style="padding-left: 16px;">
+          <div class="comment-input">
+            <ion-input type="text" placeholder="发表评论" [(ngModel)]="commentText"></ion-input>
+          </div>
+        </ion-col>
+        <ion-col col-2 style="padding: 0 4px;" class="align-center">
+          <button ion-button clear icon-only class="more" (click)="toggleFuncMenu()">
+            <ion-icon ios="ios-add-circle-outline" md="ios-add-circle-outline"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="showFuncMenu" class="funcMenu">
+        <ion-col col-3 class="align-center">
+          <button ion-button icon-only outline>
+            <ion-icon ios="ios-image-outline" md="ios-image-outline"></ion-icon>
+          </button>
+          <div>照片</div>
+        </ion-col>
+        <ion-col col-3 class="align-center">
+          <button ion-button icon-only outline>
+            <ion-icon ios="ios-document-outline" md="ios-document-outline"></ion-icon>
+          </button>
+          <div>文件</div>
+        </ion-col>
+        <ion-col col-3 class="align-center">
+          <button ion-button icon-only outline>
+            <ion-icon ios="ios-chatboxes-outline" md="ios-chatboxes-outline"></ion-icon>
+          </button>
+          <div>知会</div>
+        </ion-col>
+        <ion-col col-3 class="align-center">
+          <button ion-button icon-only outline>
+            <ion-icon ios="ios-open-outline" md="ios-open-outline"></ion-icon>
+          </button>
+          <div>转发</div>
+        </ion-col>
+        <ion-col col-3 class="align-center" (click)="clickConfirm()">
+          <button ion-button icon-only outline>
+            <ion-icon ios="ios-bookmark-outline" md="ios-bookmark-outline"></ion-icon>
+          </button>
+          <div>已阅</div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
